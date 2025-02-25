@@ -8,6 +8,7 @@ import userroutes from "./routes/user.js"
 import questionroutes from "./routes/question.js"
 import answerroutes from "./routes/answer.js"
 import session from "express-session"
+import MongoStore from "connect-mongo";
 
 
 const app = express();
@@ -16,12 +17,21 @@ app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors());
 
-app.use(session({
-  secret: 'code-quest',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false }
-}));
+const mongoURI = process.env.MONGO_URI;
+
+
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || "your-secret-key",
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: mongoURI,
+      collectionName: "sessions",
+    }),
+    cookie: { secure: false },
+  })
+);
 
 
 app.use("/user", userroutes);
@@ -149,6 +159,10 @@ const database_url = process.env.MONGODB_URL
 
 app.listen(PORT, () => { console.log(`server running on port ${PORT}`) })
 
-mongoose.connect(database_url)
-    .then(() => console.log('Mongodb database connected'))
-    .catch((err) => console.log(err.message))
+mongoose
+  .connect(database_url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB connected successfully"))
+  .catch((err) => console.error("MongoDB connection error:", err));

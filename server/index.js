@@ -17,7 +17,7 @@ app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors());
 
-const database_url = process.env.MONGODB_URL
+const database_url = process.env.MONGODB_url
 
 
 app.use(
@@ -26,7 +26,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl: database_url,
+      mongoUrl: database_url, 
       collectionName: "sessions",
     }),
     cookie: { secure: false },

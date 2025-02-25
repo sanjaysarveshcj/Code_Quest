@@ -17,7 +17,7 @@ app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors());
 
-const mongoURI = process.env.MONGO_URI;
+const database_url = process.env.MONGODB_URL
 
 
 app.use(
@@ -26,7 +26,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl: mongoURI,
+      mongoUrl: database_url,
       collectionName: "sessions",
     }),
     cookie: { secure: false },
@@ -155,12 +155,10 @@ app.post("/api/translate", async (req, res) => {
 
 
 const PORT = process.env.PORT || 5000
-const database_url = process.env.MONGODB_URL
 
 app.listen(PORT, () => { console.log(`server running on port ${PORT}`) })
 
-mongoose
-  .connect(database_url, {
+mongoose.connect(database_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

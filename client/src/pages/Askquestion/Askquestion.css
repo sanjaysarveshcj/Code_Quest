@@ -1,0 +1,113 @@
+.ask-question {
+    min-height: 80vh;
+    background-color: #f1f2f3;
+  }
+  
+  .ask-ques-container {
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    max-width: 1200px;
+  }
+  
+  .ask-ques-container h1 {
+    padding: 80px 0px 20px 0px;
+  }
+  
+  .ask-ques-container form .ask-form-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+      0 1px 4px rgb(0 0 0 / 10%);
+  }
+  
+  .ask-form-container label h4 {
+    margin-bottom: 0%;
+  }
+  
+  .ask-form-container label p,
+  .otp-section label p,
+  .video-upload-section label p {
+    margin: 0%;
+    font-size: 13px;
+    padding: 3px 0px;
+  }
+  
+  .ask-form-container label input,
+  .ask-form-container label textarea,
+  .otp-section label input,
+  .video-upload-section label input,
+  .otp-section label textarea,
+  .video-upload-section label textarea {
+    padding: 10px;
+    border: solid 1px #0000003e;
+    font-family: "Roboto", sans-serif;
+    width: calc(100% - 20px);
+    resize: none;
+  }
+  
+  .review-btn {
+    margin: 50px 0px;
+    padding: 10px;
+    background-color: #009dff;
+    border: solid 1px #009dff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .review-btn:hover {
+    background-color: #0086d8;
+  }
+  
+  .otp-section,
+.video-upload-section {
+    margin-bottom: 20px; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 
+                0 20px 48px rgb(0 0 0 / 5%), 
+                0 1px 4px rgb(0 0 0 / 10%);
+}
+
+.otp-section label h4,
+.video-upload-section label h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.otp-section label p,
+.video-upload-section label p {
+    font-size: 13px;
+    padding: 3px 0;
+    color: #666;
+}
+
+.otp-section label input,
+.video-upload-section label input,
+.otp-section label textarea,
+.video-upload-section label textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0000003e;
+    font-family: "Roboto", sans-serif;
+    resize: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.video-upload-section label input[type="file"] {
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.video-preview {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,190 @@
+.user-details-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .user-name {
+    padding-left: 20px;
+  }
+  .user-name p {
+    color: #7e7e7e;
+  }
+  .edit-profile-btn {
+    padding: 8px 10px;
+    border: solid 1px #7e7e7e;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .edit-profile-btn:hover {
+    background-color: #f5f9fc;
+  }
+  .edit-profile-title {
+    padding: 20px 0px;
+    border-bottom: solid 1px #dbd9d9;
+  }
+  .edit-profile-title-2 {
+    color: grey;
+    font-weight: 400;
+  }
+  .edit-profile-form {
+    padding: 20px;
+    border: solid 1px #dbd9d9;
+    border-radius: 5px;
+  }
+  .edit-profile-form label h3 {
+    margin: 0%;
+    padding: 3px 0px;
+  }
+  .edit-profile-form label p {
+    margin: 0%;
+    padding: 3px 0px;
+  }
+  .edit-profile-form label input,
+  .edit-profile-form label textarea {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: solid 1px #dbd9d9;
+    width: 50%;
+  }
+  
+  .user-submit-btn {
+    padding: 14px 10px;
+    background-color: #0a95ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .user-submit-btn:hover {
+    background-color: #0074cc;
+  }
+  
+  .user-cancel-btn {
+    padding: 14px 10px;
+    color: #0a95ff;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .transfer-points-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.transfer-points-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.transfer-points-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-section input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-section input:focus {
+    border-color: #007bff;
+}
+
+.search-section button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-section button:hover {
+    background: #0056b3;
+}
+
+.selected-user {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.selected-user h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.selected-user input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.selected-user input:focus {
+    border-color: #28a745;
+}
+
+.selected-user button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.selected-user button:hover {
+    background: #218838;
+}
+
+.text-red-500 {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+  

@@ -1,0 +1,126 @@
+/* 🌟 General Styling */
+.otp-page {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* 🏷️ Title */
+.otp-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🌍 Language Selector */
+.otp-language-selector {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.otp-language-selector:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 🔹 Input Container */
+.otp-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* ✍️ Input Fields */
+.otp-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.otp-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 🔘 Button Styling */
+.otp-button {
+    width: 260px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.otp-button:hover {
+    background: #0056b3;
+}
+
+/* ✅ OTP Verification Container */
+.otp-verification-container {
+    margin-top: 15px;
+}
+
+/* 📢 Success & Error Messages */
+.otp-message {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+}
+
+.otp-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.otp-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* 🎉 Success Message */
+.otp-success-message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+    .otp-input, .otp-button {
+        width: 90%;
+    }
+
+    .otp-title {
+        font-size: 18px;
+    }
+}
